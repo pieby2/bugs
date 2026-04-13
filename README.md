@@ -1,12 +1,14 @@
 # AutoStream Social-to-Lead Agent
 
+🚀 **Live Demo:** [https://agentica67.streamlit.app/](https://agentica67.streamlit.app/)
+
 AutoStream's conversational AI agent handles user engagements by parsing intent, answering product/pricing questions using local Retrieval-Augmented Generation (RAG), and capturing high-intent leads gracefully when users express willingness to try or buy.
 
 ## 1. How to run the project locally
 
 **Prerequisites:**
 - Python 3.9+
-- A Google API key (for Gemini 1.5 Flash LLM)
+- A Groq API key (for Groq-powered LLaMA 3 support)
 
 **Steps:**
 1. Clone the repository and navigate into the project directory.
@@ -14,13 +16,11 @@ AutoStream's conversational AI agent handles user engagements by parsing intent,
    ```bash
    pip install -r requirements.txt
    ```
-3. Set your Google API key:
-   * **Windows:** `set GOOGLE_API_KEY=your_key_here`
-   * **Mac/Linux:** `export GOOGLE_API_KEY=your_key_here`
-4. Run the conversational AI:
+3. Run the conversational AI Streamlit wrapper:
    ```bash
-   python agent.py
+   streamlit run app.py
    ```
+   *Note: The Streamlit app will prompt you for your `GROQ_API_KEY` securely on-screen.*
 5. You can test the following conversational flow:
    - *User:* "Hi there!"
    - *User:* "What's the pricing like for Pro?"
