@@ -1,0 +1,10 @@
+langchain>=0.1.0
+langchain-google-genai
+langgraph
+langchain-chroma
+pydantic
+rich
+chromadb
+streamlit
+langchain-groq
+sentence-transformers
