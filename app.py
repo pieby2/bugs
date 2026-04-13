@@ -19,7 +19,7 @@ else:
     if "agent_app" not in st.session_state:
         try:
             with st.spinner("Initializing Groq models and fetching RAG context..."):
-                st.session_state.agent_app = build_agent(api_key=api_key, model_name="llama3-8b-8192")
+                st.session_state.agent_app = build_agent(api_key=api_key, model_name="llama-3.1-8b-instant")
         except Exception as e:
             st.error(f"Failed to initialize Groq. Please check your API key. Error: {e}")
             st.stop()

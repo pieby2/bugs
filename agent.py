@@ -41,7 +41,7 @@ class LeadExtraction(BaseModel):
     email: str = Field(description="The user's email if provided, else empty string.", default="")
     platform: str = Field(description="The user's creator platform (YouTube, Instagram, etc) if provided, else empty string.", default="")
 
-def build_agent(api_key: str, model_name: str = "llama3-8b-8192"):
+def build_agent(api_key: str, model_name: str = "llama-3.1-8b-instant"):
     """Builds and compiles the LangGraph app with Groq LLM initialized with the given key."""
     # Initialize LLM
     llm = ChatGroq(temperature=0, groq_api_key=api_key, model_name=model_name)
